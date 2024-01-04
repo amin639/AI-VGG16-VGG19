@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import streamlit as st
 from keras.models import load_model
 from keras.utils import load_img, img_to_array
