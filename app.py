@@ -3,7 +3,16 @@ import streamlit as st
 from keras.models import load_model
 from keras.utils import load_img, img_to_array
 
-
+st.set_page_config(
+    page_title="My Streamlit App",
+    page_icon="",
+    layout="wide",  # or "centered"
+    initial_sidebar_state="expanded",
+    menu_items={
+        "Get Help": "https://docs.streamlit.io/",
+        "Report a Bug": "https://github.com/streamlit/streamlit/issues",
+    }
+)
 # modelPath = ['AIVoilanceImageClassificationModel.h5','AIPoxImageClassificationModel.h5', 'AIPoxImageClassificationModelVGG19.h5', 'AIVoilanceImageClassificationModelVGG19.h5', 'AIWheatherImageClassificationModel.h5', 'AIWheatherImageClassificationModelVGG19.h5', 'AIBirdsImageClassificationModel.h5']
 modelPath = ['AIVoilanceImageClassificationModel.h5','AIPoxImageClassificationModel.h5',  'AIWheatherImageClassificationModel.h5', 'AIBirdsImageClassificationModel.h5']
 # Dictionary to store loaded models
