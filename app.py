@@ -24,6 +24,7 @@ for filename in modelPath:
 
 model =['Select a Model', 'VGG16', 'VGG19']
 selections =['Select the problem ','Voilance & Non Voilance', 'Birds', 'Weather Image', 'Chiken Pox']
+st.title('Welcome Amin!')
 st.title('Image Classification APP')
 selection = st.selectbox('Select the Problem', selections)
 
